@@ -1,0 +1,18 @@
+# Evidencias de todo el laboratorio - Imagenes 
+
+![Evidencia del laboratorio](img/1.png)
+![Evidencia del laboratorio](img/2.png)
+![Evidencia del laboratorio](img/3.png)
+![Evidencia del laboratorio](img/4.png)
+![Evidencia del laboratorio](img/5.png)
+![Evidencia del laboratorio](img/6.png)
+![Evidencia del laboratorio](img/7.png)
+![Evidencia del laboratorio](img/8.png)
+![Evidencia del laboratorio](img/9.png)
+![Evidencia del laboratorio](img/10.png)
+![Evidencia del laboratorio](img/11.png)
+![Evidencia del laboratorio](img/12.png)
+![Evidencia del laboratorio](img/13.png)
+![Evidencia del laboratorio](img/14.png)
+![Evidencia del laboratorio](img/15.png)
+![Evidencia del laboratorio](img/16.png)

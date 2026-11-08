@@ -1,0 +1,108 @@
+2026-11-08 01:31:18 CST LOG:  database system was shut down at 2026-11-08 01:31:08 CST\r
+2026-11-08 01:35:15 CST FATAL:  password authentication failed for user "Oliver"\r
+2026-11-08 01:35:15 CST DETAIL:  Role "Oliver" does not exist.\r
+\tConnection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"\r
+2026-11-08 01:36:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 01:36:22 CST LOG:  checkpoint complete: wrote 35 buffers (0.2%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.969 s, sync=0.021 s, total=4.021 s; sync files=11, longest=0.004 s, average=0.002 s; distance=267 kB, estimate=267 kB; lsn=0/1836428, redo lsn=0/1836398\r
+2026-11-08 01:40:38 CST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.\r\r
+\t\r
+2026-11-08 01:46:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 01:48:09 CST LOG:  checkpoint complete: wrote 1012 buffers (6.2%), wrote 1 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=109.996 s, sync=0.394 s, total=110.641 s; sync files=313, longest=0.004 s, average=0.002 s; distance=4744 kB, estimate=4744 kB; lsn=0/1CF2780, redo lsn=0/1CD8658\r
+2026-11-08 01:55:36 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 01:55:36 CST STATEMENT:  ALTER SYSTEM SET log_connections = on;\r\r
+\tALTER SYSTEM SET log_disconnections = on;\r\r
+\tALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';\r\r
+\tALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 01:56:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 01:56:22 CST LOG:  checkpoint complete: wrote 30 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.294 s, sync=0.045 s, total=3.371 s; sync files=25, longest=0.005 s, average=0.002 s; distance=127 kB, estimate=4282 kB; lsn=0/1CF8598, redo lsn=0/1CF8540\r
+2026-11-08 01:56:44 CST WARNING:  there is no transaction in progress\r
+2026-11-08 01:56:56 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 01:56:56 CST STATEMENT:  ALTER SYSTEM SET log_connections = on;\r\r
+\tALTER SYSTEM SET log_disconnections = on;\r\r
+\tALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';\r\r
+\tALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 01:57:01 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 01:57:01 CST STATEMENT:  ALTER SYSTEM SET log_connections = on;\r\r
+\tALTER SYSTEM SET log_disconnections = on;\r\r
+\tALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';\r\r
+\tALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 01:58:17 CST WARNING:  there is no transaction in progress\r
+2026-11-08 01:58:30 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 01:58:30 CST STATEMENT:  ALTER SYSTEM SET log_connections = on;\r\r
+\tALTER SYSTEM SET log_disconnections = on;\r\r
+\tALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';\r\r
+\tALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 01:59:31 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 01:59:31 CST STATEMENT:  ALTER SYSTEM SET log_connections = on; ALTER SYSTEM SET log_disconnections = on; ALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h '; ALTER SYSTEM SET log_statement = 'ddl'; SELECT pg_reload_conf();\r
+2026-11-08 02:01:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:01:18 CST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.004 s, total=0.138 s; sync files=1, longest=0.004 s, average=0.004 s; distance=2 kB, estimate=3854 kB; lsn=0/1CF9178, redo lsn=0/1CF9120\r
+2026-11-08 02:03:05 CST FATAL:  password authentication failed for user "app_ventas"\r
+2026-11-08 02:03:05 CST DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"\r
+2026-11-08 02:03:20 CST FATAL:  password authentication failed for user "app_ventas"\r
+2026-11-08 02:03:20 CST DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"\r
+2026-11-08 02:06:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:06:18 CST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.135 s, sync=0.003 s, total=0.153 s; sync files=1, longest=0.003 s, average=0.003 s; distance=1 kB, estimate=3469 kB; lsn=0/1CF9618, redo lsn=0/1CF95C0\r
+2026-11-08 02:08:32 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:08:32 CST STATEMENT:  \r\r
+\tALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:08:38 CST ERROR:  column "segmento" of relation "clientes" already exists\r
+2026-11-08 02:08:38 CST STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;\r\r
+\tGRANT UPDATE ON clientes TO app_ventas;\r\r
+\tALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);\r\r
+\tCREATE ROLE rol_temporal LOGIN PASSWORD 'Temporal_Practica_2026';\r\r
+\tDROP ROLE rol_temporal;\r
+2026-11-08 02:08:46 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:08:46 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'ddl';\r\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:09:44 CST WARNING:  there is no transaction in progress\r
+2026-11-08 02:09:54 CST ERROR:  column "segmento" of relation "clientes" already exists\r
+2026-11-08 02:09:54 CST STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;\r
+\tGRANT UPDATE ON clientes TO app_ventas;\r
+\tALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);\r
+\tCREATE ROLE rol_temporal LOGIN PASSWORD 'Temporal_Practica_2026';\r
+\tDROP ROLE rol_temporal;\r
+2026-11-08 02:09:57 CST ERROR:  column "segmento" of relation "clientes" already exists\r
+2026-11-08 02:09:57 CST STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;\r
+\tGRANT UPDATE ON clientes TO app_ventas;\r
+\tALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);\r
+\tCREATE ROLE rol_temporal LOGIN PASSWORD 'Temporal_Practica_2026';\r
+\tDROP ROLE rol_temporal;\r
+2026-11-08 02:11:07 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:11:07 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:11:18 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:11:19 CST LOG:  checkpoint complete: wrote 8 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.893 s, sync=0.026 s, total=0.951 s; sync files=9, longest=0.009 s, average=0.003 s; distance=18 kB, estimate=3124 kB; lsn=0/1CFE100, redo lsn=0/1CFE0A8\r
+2026-11-08 02:11:44 CST WARNING:  there is no transaction in progress\r
+2026-11-08 02:11:51 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:11:51 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:11:53 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:11:53 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:11:54 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:11:54 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:11:54 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:11:54 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';\r
+\tSELECT pg_reload_conf();\r
+2026-11-08 02:12:36 CST ERROR:  ALTER SYSTEM cannot run inside a transaction block\r
+2026-11-08 02:12:36 CST STATEMENT:  ALTER SYSTEM SET log_statement = 'mod'; SELECT pg_reload_conf();\r
+2026-11-08 02:16:18 CST ERROR:  permission denied for table clientes\r
+2026-11-08 02:16:18 CST STATEMENT:  DELETE FROM clientes WHERE id = 5\r
+2026-11-08 02:16:35 CST ERROR:  role "soporte_ana" cannot be dropped because some objects depend on it\r
+2026-11-08 02:16:35 CST DETAIL:  privileges for table clientes\r
+2026-11-08 02:16:35 CST STATEMENT:  DROP ROLE soporte_ana;\r
+2026-11-08 02:17:55 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:17:56 CST LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.223 s, sync=0.017 s, total=0.275 s; sync files=3, longest=0.007 s, average=0.006 s; distance=1 kB, estimate=2812 kB; lsn=0/1CFE7A8, redo lsn=0/1CFE750\r
+2026-11-08 02:22:55 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:23:01 CST LOG:  checkpoint complete: wrote 61 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=6.740 s, sync=0.054 s, total=6.819 s; sync files=51, longest=0.002 s, average=0.002 s; distance=262 kB, estimate=2557 kB; lsn=0/1D40190, redo lsn=0/1D40138\r
+2026-11-08 02:23:22 CST WARNING:  there is no transaction in progress\r
+2026-11-08 02:25:08 CST ERROR:  unterminated quoted string at or near "'admin'';" at character 39\r
+2026-11-08 02:25:08 CST STATEMENT:  SELECT * FROM clientes WHERE correo = 'admin'';\r
+2026-11-08 02:27:55 CST LOG:  checkpoint starting: time\r
+2026-11-08 02:27:56 CST LOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.541 s, sync=0.008 s, total=0.561 s; sync files=6, longest=0.002 s, average=0.002 s; distance=4 kB, estimate=2301 kB; lsn=0/1D412F0, redo lsn=0/1D41298\r
