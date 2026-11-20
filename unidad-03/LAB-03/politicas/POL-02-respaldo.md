@@ -1,0 +1,9 @@
+# POL-02 — Respaldo de Bases de Datos y Verificación de Integridad
+
+* **Objetivo:** Reducir el riesgo de pérdida definitiva de información operativa, metadatos del diccionario de datos y registros históricos de auditoría ante fallos de hardware, corrupción lógica o errores humanos.
+* **Alcance:** Todas las bases de datos productivas (`comercial` en PostgreSQL, incluyendo los esquemas `public`, `auditoria`, `dba` y `gobierno`, así como la base `comercial` en MongoDB) y las bitácoras exportadas en el ambiente de producción.
+* **Regla:** Se debe ejecutar un respaldo completo diario de las bases de datos productivas fuera de horario pico y resguardar una copia en una ubicación externa independiente del servidor de origen. El DBA debe verificar semanalmente la integridad del archivo generado y comprobar mensualmente su utilidad mediante una prueba documentada en un ambiente aislado. El procedimiento técnico se definirá en la Unidad V.
+* **Responsable:** Decide la Gerencia de TI en coordinación con los propietarios de los datos (Gerencia Comercial y Seguridad de la Información). Ejecuta el DBA (Custodio).
+* **Excepciones:** Puede reprogramarse una ventana de respaldo únicamente durante mantenimientos mayores en producción previamente aprobados mediante solicitud de cambio, con autorización de la Gerencia de TI y sin omitir más de un ciclo diario consecutivo.
+* **Evidencia:** Inventario de tablas y volúmenes en `evidencias/04-catalogo.md` y `sql/03-inventario-tablas.sql` (LAB-03, Actividad 4) y exportación con huella de integridad `evidencias/E5-bitacora-postgresql.sha256` (LAB-03). *(Hoy no existe una bitácora de ejecución de respaldos ni actas de verificación periódica, ya que su implementación pertenece a la Unidad V).*
+* **Revisión:** Semestral, o cada vez que se incorpore una nueva base de datos o motor en producción.

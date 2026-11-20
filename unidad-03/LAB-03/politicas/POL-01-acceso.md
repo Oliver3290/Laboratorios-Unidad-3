@@ -1,0 +1,9 @@
+# POL-01 — Control de Acceso y Revisión de Privilegios
+
+* **Objetivo:** Reducir el riesgo de accesos no autorizados, escalamiento de privilegios y exposición indebida de datos confidenciales o bitácoras de seguridad.
+* **Alcance:** Todos los roles, cuentas de aplicación (`app_ventas`), cuentas administrativas (`postgres`, `admin`) y esquemas o colecciones de la base de datos `comercial` en PostgreSQL y MongoDB dentro de los ambientes de producción y pruebas.
+* **Regla:** Todo acceso o modificación de privilegios debe ser solicitado formalmente por el responsable del área usuaria o el líder técnico de la aplicación mediante un ticket justificado por función operativa, y requiere la aprobación expresa del propietario del dato antes de su ejecución. El DBA aplica el principio de mínimo privilegio, revisa mensualmente la vigencia de los roles activos y concilia los privilegios otorgados contra las solicitudes aprobadas.
+* **Responsable:** Decide el propietario del dato (Gerencia Comercial para datos operativos; Seguridad de la Información y Auditoría Interna para esquemas `auditoria`, `dba` y bitácoras). Ejecuta el DBA (Custodio).
+* **Excepciones:** Ante una emergencia operativa que interrumpa el servicio en producción, el DBA puede otorgar un acceso temporal limitado por un máximo de 24 horas con autorización de la Gerencia de TI, debiendo formalizar la solicitud aprobada al siguiente día hábil.
+* **Evidencia:** Líneas `statement: GRANT` y `statement: REVOKE` en `dba.bitacora` y `LAB-01/evidencias/bitacora-lab01.log` (LAB-01, Actividad 6), instantáneas en `auditoria.instantaneas_privilegios` (LAB-02, Actividad 8), matriz `evidencias/02-responsables.md` (LAB-03, Actividad 2) y registros en `gobierno.solicitudes_cambio` (LAB-03, Actividad 7). *(El acta formal de la revisión mensual automatizada hoy no existe).*
+* **Revisión:** Trimestral, o de forma inmediata tras cambios organizacionales relevantes o incidentes de seguridad.
